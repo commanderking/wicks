@@ -1,0 +1,65 @@
+{
+    "scents": [
+        {
+            "name": "TOKEN OF MY OBJECTION!",
+            "categories": [
+                "Fruity"
+            ],
+            "fandom": "Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY LOYALTY!",
+            "categories": [
+                "Sweet"
+            ],
+            "fandom": "Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY WORTH!",
+            "categories": [
+                "Fruity",
+                "Musky"
+            ],
+            "fandom": "Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY PERFECTION!",
+            "categories": [
+                "Floral",
+                "Musky"
+            ],
+            "fandom": "Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY RESOLVE!",
+            "categories": [
+                "Fresh"
+            ],
+            "fandom": "The Great Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY EDIFICATION!",
+            "categories": [
+                "Floral",
+                "Fruity"
+            ],
+            "fandom": "The Great Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY DESTINY!",
+            "categories": [
+                "Floral",
+                "Musky"
+            ],
+            "fandom": "The Great Ace Attoney"
+        },
+        {
+            "name": "TOKEN OF MY DEDUCTION!",
+            "categories": [
+                "Floral",
+                "Sweet"
+            ],
+            "fandom": "The Great Ace Attoney"
+        }
+    ]
+}
