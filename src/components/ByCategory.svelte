@@ -7,7 +7,7 @@
 
 <div class="flex-1 text-center">
 	<a href={link}>
-		<img class="rounded-full w-[200px] m-auto mb-4" src={imageSrc} {alt} />
-		<h3 class="text-2xl">{text}</h3>
+		<img class="rounded-full w-[200px] m-auto mb-4 border-8" src={imageSrc} {alt} />
+		<h3 class="text-2xl text-[#E9CAE5]">{text}</h3>
 	</a>
 </div>
