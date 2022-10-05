@@ -21,10 +21,12 @@ export const scents = {
 	},
 	Musky: {
 		name: 'Musky',
-		color: '#C96367'
+		color: '#706D6D'
 	},
 	Sweet: {
 		name: 'Sweet',
 		color: '#F3CCDD'
 	}
-};
+} as const;
+
+export type Scent = keyof typeof scents;
