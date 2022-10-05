@@ -1,113 +1,60 @@
 {
-    "candles": [
-        {
-            "candleName": "TOKEN OF MY OBJECTION!",
-            "characterName": "Phoenix Wright",
-            "categories": [
-                "Fruity"
-            ],
-            "scentNotes": [
-                "dragonfruit",
-                "blue agave", 
-                "black currant"
-            ],
-            "fandom": "Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY LOYALTY!",
-            "characterName": "Detective Gumshoe",
-            "categories": [
-                "Sweet"
-            ],
-            "scentNotes": [
-                "fruit loops",
-                "lemon", 
-                "sandalwood"
-            ],
-            "fandom": "Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY WORTH!",
-            "characterName": "Miles Edgeworth",
-            "categories": [
-                "Fruity",
-                "Musky"
-            ],
-            "scentNotes": [
-                "dark plum",
-                "parchment", 
-                "amyris"
-            ],
-            "fandom": "Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY PERFECTION!",
-            "characterName": "Franziska Von Karma",
-            "categories": [
-                "Floral",
-                "Musky"
-            ],
-            "scentNotes": [
-                "lavender",
-                "cypress", 
-                "amber"
-            ],
-            "fandom": "Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY RESOLVE!",
-            "characterName": "Ryunosuke Naruhodo",
-            "categories": [
-                "Fresh"
-            ],
-            "scentNotes": [
-                "black ginger",
-                "bamboo", 
-                "cedarwood"
-            ],
-            "fandom": "The Great Ace Attoney"
-        },
-        {
-            "candleName": "TOKEN OF MY EDIFICATION!",
-            "characterName": "Susato Mikotoba ",
-            "categories": [
-                "Floral",
-                "Fruity"
-            ],
-            "scentNotes": [
-                "apricot blossom",
-                "sea salt", 
-                "rosewood"
-            ],
-            "fandom": "The Great Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY DESTINY!",
-            "characterName": "Kazuma Asogi",
-            "categories": [
-                "Floral",
-                "Musky"
-            ],
-            "scentNotes": [
-                "smoked oud",
-                "rose water", 
-                "ambergris"
-            ],
-            "fandom": "The Great Ace Attorney"
-        },
-        {
-            "candleName": "TOKEN OF MY DEDUCTION!",
-            "characterName": "Herlock Sholmes",
-            "categories": [
-                "Floral",
-                "Sweet"
-            ],
-            "scentNotes": [
-                "earl grey",
-                "lavender", 
-                "steamed milk"
-            ],
-            "fandom": "The Great Ace Attorney"
-        }
-    ]
+	"candles": [
+		{
+			"candleName": "TOKEN OF MY OBJECTION!",
+			"characterName": "Phoenix Wright",
+			"categories": ["Fruity"],
+			"scentNotes": ["dragonfruit", "blue agave", "black currant"],
+			"fandom": "Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY LOYALTY!",
+			"characterName": "Detective Gumshoe",
+			"categories": ["Sweet"],
+			"scentNotes": ["fruit loops", "lemon", "sandalwood"],
+			"fandom": "Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY WORTH!",
+			"characterName": "Miles Edgeworth",
+			"categories": ["Fruity", "Musky"],
+			"scentNotes": ["dark plum", "parchment", "amyris"],
+			"fandom": "Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY PERFECTION!",
+			"characterName": "Franziska Von Karma",
+			"categories": ["Floral", "Musky"],
+			"scentNotes": ["lavender", "cypress", "amber"],
+			"fandom": "Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY RESOLVE!",
+			"characterName": "Ryunosuke Naruhodo",
+			"categories": ["Fresh"],
+			"scentNotes": ["black ginger", "bamboo", "cedarwood"],
+			"fandom": "The Great Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY EDIFICATION!",
+			"characterName": "Susato Mikotoba ",
+			"categories": ["Floral", "Fruity"],
+			"scentNotes": ["apricot blossom", "sea salt", "rosewood"],
+			"fandom": "The Great Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY DESTINY!",
+			"characterName": "Kazuma Asogi",
+			"categories": ["Floral", "Musky"],
+			"scentNotes": ["smoked oud", "rose water", "ambergris"],
+			"fandom": "The Great Ace Attorney"
+		},
+		{
+			"candleName": "TOKEN OF MY DEDUCTION!",
+			"characterName": "Herlock Sholmes",
+			"categories": ["Floral", "Sweet"],
+			"scentNotes": ["earl grey", "lavender", "steamed milk"],
+			"fandom": "The Great Ace Attorney"
+		}
+	]
 }
