@@ -4,7 +4,7 @@
 	export let fandomCandles: FandomCandles;
 </script>
 
-<div class="p-4 md:w-[800px] sm:max-w-[100%]">
+<div class="p-4 md:w-[850px] sm:max-w-[100%]">
 	<div class="inline-block bg-[#FFF2AF] p-2 pl-4 pr-4 font-bold text-lg">
 		{fandomCandles.title.toUpperCase()}
 	</div>
