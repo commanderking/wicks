@@ -9,7 +9,7 @@
 		<ByCategory
 			text="By Scent"
 			imageSrc="/scents.png"
-			link="/scentcategory"
+			link="/scent"
 			alt="trees, flowers, fruits, and coffee or cake"
 		/>
 	</div>
