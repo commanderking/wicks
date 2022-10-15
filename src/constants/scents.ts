@@ -1,7 +1,8 @@
 export const scents = {
 	Fruity: {
 		name: 'Fruity',
-		color: '#FFF2AF'
+		color: '#FFF2AF',
+		image: ''
 	},
 	Floral: {
 		name: 'Floral',

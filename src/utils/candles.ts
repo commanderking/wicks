@@ -41,6 +41,5 @@ const formatCandles = (candles: Candle[]) => {
 export type FormattedCandle = ReturnType<typeof formatCandles>[0]['candles'][0];
 
 export const getCandles = () => {
-	console.log({ data });
 	return formatCandles(data.candles);
 };
