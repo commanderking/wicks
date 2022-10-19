@@ -6,8 +6,6 @@
 	import FandomCandles from '../../components/FandomCandles.svelte';
 	let fandomCandles = getCandles();
 	let scents = getScents();
-
-	console.log({ candles: fandomCandles });
 </script>
 
 <div class="flex flex-wrap w-[1024px] justify-center content-center m-auto text-[#7565A0]">

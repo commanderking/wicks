@@ -1,5 +1,10 @@
 <script lang="ts">
+	import { getCandlesByScent } from '../../utils/candles';
 	import { scents, type Scent } from '../../constants/scents';
+
+	const candlesByScent = getCandlesByScent();
+
+	console.log({ candlesByScent });
 	const scentValues = Object.values(scents);
 
 	let selectedScents: Scent[] = [];
@@ -46,6 +51,14 @@
 		</button>
 	{/each}
 	<button on:click={selectAll}>See All Scents</button>
+
+	{#each selectedScents as scent}
+		<div>
+			{#each candlesByScent[scent] as candle}
+				<div>{candle.candleName}</div>
+			{/each}
+		</div>
+	{/each}
 
 	{selectedScents}
 </div>

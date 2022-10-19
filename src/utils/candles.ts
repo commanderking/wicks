@@ -43,3 +43,24 @@ export type FormattedCandle = ReturnType<typeof formatCandles>[0]['candles'][0];
 export const getCandles = () => {
 	return formatCandles(data.candles);
 };
+
+const initialScents = _.mapValues(scents, (scent) => [] as Candle[]);
+
+const formatCandlesByScent = (candles: Candle[]) => {
+	const candlesByScent = candles.reduce((groupedCandles, candle) => {
+		const newGroupedCandles = candle.categories.reduce((newGroupedCandles, category) => {
+			return {
+				...groupedCandles,
+				[category]: [...newGroupedCandles[category], candle]
+			};
+		}, groupedCandles);
+
+		return newGroupedCandles;
+	}, initialScents);
+
+	return candlesByScent;
+};
+
+export const getCandlesByScent = () => {
+	return formatCandlesByScent(data.candles);
+};
