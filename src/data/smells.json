@@ -55,6 +55,41 @@
 			"categories": ["Floral", "Sweet"],
 			"scentNotes": ["earl grey", "lavender", "steamed milk"],
 			"fandom": "The Great Ace Attorney"
+		},
+		{
+			"candleName": "Teatime with Claude",
+			"characterName": "Claude",
+			"categories": ["Fresh", "Woodsy"],
+			"scentNotes": ["pine needle", "white tea", "sandalwood"],
+			"fandom": "Fire Emblem Three Houses"
+		},
+		{
+			"candleName": "Teatime with Dimitri",
+			"characterName": "Dimitri",
+			"categories": ["Fresh", "Floral"],
+			"scentNotes": ["chamomile", "white tea", "mandarin"],
+			"fandom": "Fire Emblem Three Houses"
+		},
+		{
+			"candleName": "Teatime with Edelgard",
+			"characterName": "Edelgard",
+			"categories": ["Fruity"],
+			"scentNotes": ["bergamot", "black tea", "cedar"],
+			"fandom": "Fire Emblem Three Houses"
+		},
+		{
+			"candleName": "Pom of Power",
+			"characterName": "Zagreus",
+			"categories": ["Fruity", "Spicy"],
+			"scentNotes": ["pomegranate", "cinnamon", "warm musk"],
+			"fandom": "Hades"
+		},
+		{
+			"candleName": "Blessed Rain after the Drought",
+			"characterName": "Tanjiro",
+			"categories": ["Fresh", "Fruity"],
+			"scentNotes": ["fresh", "rainwater", "green apple", "jasmine"],
+			"fandom": "Hades"
 		}
 	]
 }

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { getCandlesByScent } from '../../utils/candles';
 	import { scents, type Scent } from '../../constants/scents';
+	import CandlesWrapper from '../../components/CandlesWrapper.svelte';
+	import Header from '../../components/Header.svelte';
 
 	const candlesByScent = getCandlesByScent();
 
@@ -39,26 +41,36 @@
 	};
 </script>
 
-<div>
-	<h1>Scent Menu</h1>
-	{#each scentValues as scentValue}
-		<button
-			class={'p-2 border-solid border-2 rounded-full'}
-			style:background-color={scentsActive[scentValue.name] ? 'white' : ''}
-			on:click={(value) => addScent(scentValue.name)}
-		>
-			{scentValue.name}
-		</button>
-	{/each}
-	<button on:click={selectAll}>See All Scents</button>
+<div class="flex flex-wrap w-[1024px] justify-center content-center m-auto mt-8 ">
+	<Header />
+	<div class="max-w-[850px] p-4">
+		<h1 class="text-4xl text-center text-white mb-2">Pick a Scent</h1>
 
-	{#each selectedScents as scent}
-		<div>
-			{#each candlesByScent[scent] as candle}
-				<div>{candle.candleName}</div>
-			{/each}
+		{#each scentValues as scentValue}
+			<button
+				class={'p-4 pt-2 pb-2 m-1 border-solid border-2 rounded-full'}
+				style:background-color={scentsActive[scentValue.name] ? 'white' : ''}
+				on:click={(value) => addScent(scentValue.name)}
+			>
+				<span class="font-bold">{scentValue.name.toUpperCase()}</span>
+			</button>
+		{/each}
+	</div>
+	<!-- <button on:click={selectAll}>See All Scents</button> -->
+
+	<div>
+		{#each selectedScents as scent}
+			{#if candlesByScent[scent].length}
+				<div>
+					<CandlesWrapper title={scent.toUpperCase()} candles={candlesByScent[scent]} />
+				</div>
+			{/if}
+		{/each}
+	</div>
+
+	{#if selectedScents.length === 0}
+		<div class="w-[100%] max-w-[850px] text-center text-2xl text-white p-8">
+			No Scents Selected Yet :(
 		</div>
-	{/each}
-
-	{selectedScents}
+	{/if}
 </div>
