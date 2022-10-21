@@ -43,24 +43,31 @@
 	<Header />
 	<div class="max-w-[850px] p-4">
 		<h1 class="text-4xl text-center text-white mb-2">Pick a Scent</h1>
-
-		{#each scentValues as scentValue}
-			<button
-				class={'p-4 pt-2 pb-2 m-1 border-solid border-2 rounded-full'}
-				style:background-color={scentsActive[scentValue.name] ? scentValue.color : ''}
-				on:click={(value) => addScent(scentValue.name)}
+		<div class="pt-8 pb-8">
+			{#each scentValues as scentValue}
+				<button
+					class={'p-4 pt-2 pb-2 m-1 border-solid border-2 rounded-full'}
+					style:background-color={scentsActive[scentValue.name] ? scentValue.color : ''}
+					on:click={(value) => addScent(scentValue.name)}
+				>
+					<span class="font-bold">{scentValue.name.toUpperCase()}</span>
+				</button>
+			{/each}
+			<button class="w-[100%] text-white underline mt-4 text-xl" on:click={selectAll}
+				>See All Scents!</button
 			>
-				<span class="font-bold">{scentValue.name.toUpperCase()}</span>
-			</button>
-		{/each}
+		</div>
 	</div>
-	<button class="w-[100%] text-white underline" on:click={selectAll}>See All Scents!</button>
 
 	<div>
 		{#each selectedScents as scent}
 			{#if candlesByScent[scent].length}
 				<div>
-					<CandlesWrapper title={scent.toUpperCase()} candles={candlesByScent[scent]} />
+					<CandlesWrapper
+						title={scent.toUpperCase()}
+						candles={candlesByScent[scent]}
+						titleBgColor={scents[scent].color}
+					/>
 				</div>
 			{/if}
 		{/each}
