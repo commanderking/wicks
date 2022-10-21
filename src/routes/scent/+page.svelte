@@ -5,8 +5,6 @@
 	import Header from '../../components/Header.svelte';
 
 	const candlesByScent = getCandlesByScent();
-
-	console.log({ candlesByScent });
 	const scentValues = Object.values(scents);
 
 	let selectedScents: Scent[] = [];
@@ -49,14 +47,14 @@
 		{#each scentValues as scentValue}
 			<button
 				class={'p-4 pt-2 pb-2 m-1 border-solid border-2 rounded-full'}
-				style:background-color={scentsActive[scentValue.name] ? 'white' : ''}
+				style:background-color={scentsActive[scentValue.name] ? scentValue.color : ''}
 				on:click={(value) => addScent(scentValue.name)}
 			>
 				<span class="font-bold">{scentValue.name.toUpperCase()}</span>
 			</button>
 		{/each}
 	</div>
-	<!-- <button on:click={selectAll}>See All Scents</button> -->
+	<button class="w-[100%] text-white underline" on:click={selectAll}>See All Scents!</button>
 
 	<div>
 		{#each selectedScents as scent}
@@ -69,7 +67,9 @@
 	</div>
 
 	{#if selectedScents.length === 0}
-		<div class="w-[100%] max-w-[850px] text-center text-2xl text-white p-8">
+		<div
+			class="w-[100%] max-w-[850px] text-center text-2xl text-white p-8 border-white border-2 m-10"
+		>
 			No Scents Selected Yet :(
 		</div>
 	{/if}
