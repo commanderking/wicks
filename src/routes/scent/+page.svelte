@@ -28,7 +28,7 @@
 		if (selectedScents.includes(addedScent)) {
 			selectedScents = selectedScents.filter((availableScent) => availableScent !== addedScent);
 		} else {
-			selectedScents = [...selectedScents, addedScent];
+			selectedScents = [addedScent, ...selectedScents];
 		}
 
 		updateScentsActive(addedScent);
