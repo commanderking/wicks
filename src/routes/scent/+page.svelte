@@ -3,6 +3,7 @@
 	import { scents, type Scent } from '../../constants/scents';
 	import CandlesWrapper from '../../components/CandlesWrapper.svelte';
 	import Header from '../../components/Header.svelte';
+	import { fade } from 'svelte/transition';
 
 	const candlesByScent = getCandlesByScent();
 	const scentValues = Object.values(scents);
@@ -60,9 +61,9 @@
 	</div>
 
 	<div>
-		{#each selectedScents as scent}
+		{#each selectedScents as scent (scent)}
 			{#if candlesByScent[scent].length}
-				<div>
+				<div in:fade={{ duration: 500 }}>
 					<CandlesWrapper
 						title={scent.toUpperCase()}
 						candles={candlesByScent[scent]}
